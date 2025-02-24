@@ -2,42 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Assignment 3 - Chapter 5 Demo</title>
+  <meta name="description" content="Basic CSS, Cascade, and Inheritance">
+  <title>Assignment 3 - Chapter 10,11,12,15 </title>
 
   <!--
     TODO #1 (External CSS):
-      Link to your external 'style.css' file here.
-      For reference, see Chapter 5 about including CSS files.
+      Links to my external 'style.css' file here.
   -->
-
+  <link rel="stylesheet" href="style.css">
+  
   <!--
     TODO #2 (Internal CSS):
-      Add an internal <style> block here with at least one rule.
-      For example, you might style the <body> or <footer>.
-      Refer to Chapter 5's section on using the <style> element.
+      Adding an internal <style> block here with at least one rule.
   -->
 
+  <style>
+</style>
+
+
 </head>
-<body>
+<body style="font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(53, 27, 202);">
   <!--
-    TODO #3 (Inline CSS):
-      Add a style attribute to at least one element, e.g. this <h1>.
-      Example:
-        <h1 style="color: blue; font-family: serif;">My Demo</h1>
-      Then explain in a comment which Chapter 5 property/properties are used
-      and how they might override the external or internal CSS if conflicts arise.
+    TODO #3 (Inline CSS):s
+      Added a style attribute to this h1 element.
+      Change my font size to be larger and my background a different color. 
+      
   -->
-  <h1>Welcome to My Chapter 5 Demo</h1>
+  <h1 style="background-color: rgb(168, 167, 166);size: 15;">Welcome to My Chapter 10,11,12,15 Demo</h1>
 
   <p>
     This paragraph should demonstrate <strong>inheritance</strong>.
-    If you set a 'color' or 'font-family' on the <body> or a parent element,
-    it should automatically apply here, unless it's overridden.
+    The color and font-family are specified in the inline CSS in my body tag. 
   </p>
-  <p>
-    Modify colors, fonts, text size, etc. in your external or internal CSS.
-    Observe how the CSS cascade and inheritance affect these paragraphs
-    vs. any inline-styled elements.
+  <p style="color: darkviolet;">
+    I modified the color in this paragraph by using inline CSS.
   </p>
 
   <!--
