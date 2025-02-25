@@ -1,53 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Basic CSS, Cascade, and Inheritance">
-  <title>Assignment 3 - Chapter 10,11,12,15 </title>
-
-  <!--
-    TODO #1 (External CSS):
-      Links to my external 'style.css' file here.
-  -->
-  <link rel="stylesheet" href="style.css">
-  
-  <!--
-    TODO #2 (Internal CSS):
-      Adding an internal <style> block here with at least one rule.
-  -->
-
-  <style>
-</style>
-
-
-</head>
-<body style="font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(53, 27, 202);">
-  <!--
-    TODO #3 (Inline CSS):s
-      Added a style attribute to this h1 element.
-      Change my font size to be larger and my background a different color. 
-      
-  -->
-  <h1 style="background-color: rgb(168, 167, 166);size: 15;">Welcome to My Chapter 10,11,12,15 Demo</h1>
-
-  <p>
-    This paragraph should demonstrate <strong>inheritance</strong>.
-    The color and font-family are specified in the inline CSS in my body tag. 
-  </p>
-  <p style="color: darkviolet;">
-    I modified the color in this paragraph by using inline CSS.
-  </p>
-
-  <!--
-    TODO #4 (Demonstrate Cascade):
-      For example, if your external CSS sets a color on <h1>,
-      and your internal CSS sets a different color, see which one wins.
-      Add a short comment explaining the result according to Chapter 5
-      on the CSS cascade.
-  -->
-
-  <footer>
-    <p>&copy; 2025 My Demo Site</p>
-  </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Basic CSS, Cascade, and Inheritance">
+        <title>Assignment 3 - Chapter 10,11,12,15 </title>
+        <!--
+            Links to my external 'style.css' file here.
+        -->
+        <link rel="stylesheet" href="style.css">
+        <!--
+            Adding an internal <style> block here with at least one rule.
+        -->
+        <style>
+            footer {
+                font-size: smaller;
+            }
+        </style>
+    </head>
+    <body style="font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(53, 27, 202);">
+        <!--
+          Inline CSS
+            Added a style attribute to this h1 element.
+            Change my font size to be larger and my background a different color.    
+        -->
+        <h1 style="background-color: rgb(168, 167, 166);font-size:40px;">Welcome to My Chapter 10,11,12,15 Demo</h1>
+        <p> This paragraph should demonstrate <strong>inheritance</strong>. The color and font-family are specified in the inline CSS in my body tag. The font size comes from body tag in the extrenal CSS. </p>
+        <p style="color: darkviolet;"> I modified the color in this paragraph by using inline CSS. The font-family is specified in the inline CSS in my body tag. The font size comes from body tag in the extrenal CSS. </p>
+        <!--
+            If my external CSS sets a color on <h1>,
+            and my internal CSS sets a different color, the internal CSS wins. 
+        -->
+        <footer>
+            <p>&copy; 2025 Marisa Polito's Site</p>
+        </footer>
+    </body>
 </html>
